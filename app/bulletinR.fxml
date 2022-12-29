@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.bulletinRController">
+   <children>
+      <!--
+      <ComboBox fx:id="searchName" layoutX="43.0" layoutY="21.0" prefWidth="150.0" />
+      -->
+      <Button layoutX="204.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnSearch" text="検索" />
+      <TableView fx:id="table" layoutX="13.0" layoutY="102.0" prefHeight="331.0" prefWidth="902.0">
+        <columns>
+            <TableColumn fx:id="buttonCol" prefWidth="50.0" text="Button" />
+          <TableColumn fx:id="idCol" prefWidth="40.0" text="id" />
+          <TableColumn fx:id="dateCol" prefWidth="75.0" text="日付" />
+            <TableColumn fx:id="timeCol" prefWidth="75.0" text="時間" />
+            <TableColumn fx:id="subCol" prefWidth="140.0" text="主題" />
+            <TableColumn fx:id="contCol" prefWidth="200.0" text="内容" />
+            <TableColumn fx:id="writerCol" prefWidth="90.0" text="記載者" />
+            <TableColumn fx:id="readerCol" prefWidth="90.0" text="宛先" />
+            <TableColumn fx:id="check1Col" prefWidth="60.0" text="Check1" />
+            <TableColumn fx:id="check2Col" prefWidth="60.0" text="Check2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="fromField" layoutX="46.0" layoutY="21.0" />
+      <TextField fx:id="toField" layoutX="46.0" layoutY="52.0" />
+      <Button layoutX="250.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnNewForm" text="New" />
+      <ComboBox fx:id="userNo" layoutX="657.0" layoutY="9.0" prefHeight="25.0" prefWidth="63.0" />
+      <TextField fx:id="userName" layoutX="726.0" layoutY="9.0" prefHeight="25.0" prefWidth="138.0" />
+   </children>
+</Pane>

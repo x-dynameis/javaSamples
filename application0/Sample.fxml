@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application0.SampleController">
+   <center>
+      <Pane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView layoutX="55.0" layoutY="111.0" prefHeight="200.0" prefWidth="357.0">
+              <columns>
+                <TableColumn fx:id="txtId" prefWidth="75.0" text="id" />
+                <TableColumn fx:id="txtName" prefWidth="146.0" text="名前" />
+                  <TableColumn fx:id="txtPhonetics" minWidth="4.0" prefWidth="120.0" text="フリガナ" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
